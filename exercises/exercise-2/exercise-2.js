@@ -2,8 +2,7 @@ let hogwarts = [
   {
     firstName: "Harry",
     lastName: "Potter",
-    house: "Gryffindor",
-    pet: "Owl",
+4    pet: "Owl",
     occupation: "Student",
   },
   {
