@@ -8,13 +8,14 @@ let order = [
 ];
 
 function printReceipt(order) {
-  console.log("QUA   ITEM               TOTAL ");
+  console.log("QTY   ITEM               TOTAL ");
   let total = 0;
   order.forEach(({itemName, quantity, unitPrice}) =>{
     total += quantity * unitPrice;
     console.log(`${quantity}     ${itemName}        ${quantity * unitPrice}`);
     return total;
   })
+  
   console.log(`Total: ${total}`);
 }
 
