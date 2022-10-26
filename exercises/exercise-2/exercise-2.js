@@ -2,7 +2,7 @@ let hogwarts = [
   {
     firstName: "Harry",
     lastName: "Potter",
-4    pet: "Owl",
+    pet: "Owl",
     occupation: "Student",
   },
   {
@@ -69,3 +69,24 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function findtheHouse(hogwarts) {
+  hogwarts.forEach((character) =>{
+    let {firstName, lastName, house, pet, occupation} = character
+    if (house === 'Gryffindor'){
+      console.log(firstName + " " + lastName);
+    }
+  })
+}
+
+function teacherWithPet(hogwarts) {
+	hogwarts.forEach((character) => {
+		let { firstName, lastName, house, pet, occupation } = character;
+		if (occupation === 'Teacher' && pet) {
+			console.log(firstName + " " + lastName);
+		}
+	});
+}
+
+findtheHouse(hogwarts)
+teacherWithPet(hogwarts)
